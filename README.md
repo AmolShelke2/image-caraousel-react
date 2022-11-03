@@ -14,10 +14,12 @@ I learned some basic topics, I added useState hook and working with state.
 <hr>
 
 ## Live Preview
-
+[Image Carousel react](https://image-caraousel-react.vercel.app/)
 <hr>
 
 ## Preview of the project
+
+https://user-images.githubusercontent.com/95171638/199786817-eb606a0b-b482-408f-b9d2-26b606741dcb.mp4
 
 <hr>
 
