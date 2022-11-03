@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './ImageCarousel.css';
 
 // images importing
@@ -10,13 +10,33 @@ import img5 from '../images/cat5.jpg';
 import img6 from '../images/cat6.jpg';
 
 const ImageCarousel = () => {
-  const catImageArray = [img1, img2, img3, img4, img5, img6];
+  let catImageArray = [img1, img2, img3, img4, img5, img6];
+  console.log(catImageArray.length);
+
+  const [imgIdx, setIndex] = useState(0);
+
+  const nextSlide = () => {
+    if (imgIdx < catImageArray.length - 1) {
+      setIndex(imgIdx + 1);
+    } else {
+      setIndex(0);
+    }
+  };
+
+  const prevSlide = () => {
+    if (imgIdx > 0) {
+      setIndex(imgIdx - 1);
+    } else {
+      setIndex(catImageArray.length - 1);
+    }
+  };
 
   return (
     <div className="image-caraousel">
-      <button>Previous</button>
-      <img src={catImageArray[0]} alt="cat-img"></img>
-      <button>Next</button>
+      {console.log(imgIdx)}
+      <button onClick={prevSlide}>Previous</button>
+      <img src={catImageArray[imgIdx]} alt="cat-img"></img>
+      <button onClick={nextSlide}>Next</button>
     </div>
   );
 };
