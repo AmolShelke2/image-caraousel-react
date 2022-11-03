@@ -1,6 +1,25 @@
-# Getting Started with Create React App
+# Image-carousel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a basic Image Carousel project created with ReactJS. I have just started learning react and
+I learned some basic topics, I added useState hook and working with state.
+
+<hr>
+
+## Tech used
+
+- HTML
+- CSS
+- ReactJs
+
+<hr>
+
+## Live Preview
+
+<hr>
+
+## Preview of the project
+
+<hr>
 
 ## Available Scripts
 
